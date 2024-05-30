@@ -1,6 +1,6 @@
-[profile.solidity]
-evm_version = "cancun"
-solc_version = "0.8.25"
+# [profile.solidity]
+# evm_version = "cancun"
+# solc_version = "0.8.25"
 
 [profile.default]
 src = "src"
@@ -11,5 +11,7 @@ remappings = [
     "@openzeppelin/contracts-upgradeable=lib/openzeppelin-contracts-upgradeable/contracts",
     "@openzeppelin/contracts=lib/openzeppelin-contracts/contracts",
 ]
+
+fs_permissions = [{ access = "read", path = "./" }]
 
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
